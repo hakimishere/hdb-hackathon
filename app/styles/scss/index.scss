@@ -1,3 +1,40 @@
 body {
-  background-color: green;
+  background-color: grey;
+  margin: 0px;
+}
+
+.header-images-container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+#translucence {
+	heigh: 100vh;
+	width: 100vw;
+	background: black;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+#header-images-left {
+	display: inline-block;
+	// background: black;
+	background-image: url("/app/assets/images/spices.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	width: 50vw;
+	height: 100vh;
+}
+
+#header-images-right {
+	display: inline-block;
+	// background: white;
+	background-image: url("/app/assets/images/crab.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	width: 50vw;
+	height: 100vh;
 }
