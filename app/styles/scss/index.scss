@@ -1,40 +1,170 @@
 body {
-  background-color: grey;
+  background-color: black;
   margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// ----- HEADER & NAVBAR ----- //
+
+.navbar {
+	width: 100vw;
+	position: absolute;
+	z-index: 1;
+	margin-top: 1em;
+}
+
+.navbar-links {
+	color: #F5F5F5;
+	text-decoration: none;
+	// margin-left: 5vw;
+	font-size: 1.0em;
+}
+
+#navbar-logo {
+	font-size: 1.3em;
+	margin-left: 5vw;
+}
+
+.logo-people {
+	font-size: 1.5em;
+}
+
+#logo-building {
+	font-size: 1.8em;
+}
+
+#brand-name {
+	margin-left: 0.5vw;
+}
+
+.navbar-navi {
+	margin-left: 5vw;
+}
+
+#jom {
+	margin-left: 2vw;
+}
+
+.navbar-link {
+	margin-left: 0.5vw;
+}
+
+.navbar-login {
+	margin-left: 35vw;
+}
+
+#sit-down {
+	margin-left: 2vw;
 }
 
 .header-images-container {
+	position: relative;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
 }
 
-#translucence {
-	heigh: 100vh;
-	width: 100vw;
-	background: black;
-	z-index: 1;
-	opacity: 0.5;
-}
-
 #header-images-left {
 	display: inline-block;
-	// background: black;
 	background-image: url("/app/assets/images/spices.jpg");
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
+	z-index: -1;
 	width: 50vw;
 	height: 100vh;
+	opacity: 0.85;
+	position: relative;
+}
+
+.header-image-text-left {
+	text-align: right;
+	position: relative;
+	top: 30vh;
+	margin-right: 10vw;
+}
+
+#invite-now {
+	background-color: rgb(250, 69, 66);
+	border-radius: 1em;
+	border: none;
+	opacity: 0.9;
 }
 
 #header-images-right {
 	display: inline-block;
-	// background: white;
 	background-image: url("/app/assets/images/crab.jpg");
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
+	z-index: -1;
 	width: 50vw;
 	height: 100vh;
+	opacity: 0.85;
+	position: relative;
 }
+
+.header-image-text-right {
+	text-align: left;
+	position: relative;
+	top: 30vh;
+	margin-left: 10vw;
+}
+
+#kiasu-now {
+	background-color: rgb(250, 69, 66);
+	// background-color: #696969;
+	border-radius: 1em;
+	border: none;
+	opacity: 0.9;
+}
+
+.header-image-text-left, .header-image-text-right {
+	color: white;
+	font-weight: 300;
+	font-size: 5em;
+}
+
+.header-button {
+	height: 5em;
+	width: 20em;
+	position: relative;
+	top: 20em;
+	left: 22.5em;
+	color: white;
+}
+
+.button-text {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+// ----- END OF HEADER & NAVBAR ----- //
+
+// ----- HOW IT WORKS ----- //
+.how-it-works-container {
+	height: 60vh;
+	width: 100vw;
+	background: white;
+}
+
+.how-it-works-text {
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 2em;
+}
+
+#how-it-works {
+	font-size: 3em;
+	padding-top: 0.5em;
+}
+
+.how-it-works-images-container {
+	display: flex;
+	justify-content: center;
+}
+
+.how-it-works-images-box {
+	width: 33.3vw;
+	text-align: center;
+}
+
+// ----- END OF HOW IT WORKS ----- //
