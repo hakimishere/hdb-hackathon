@@ -7,8 +7,11 @@ const browserSync = require('browser-sync')
 const autoprefixer = require('gulp-autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
 const uglify = require('gulp-uglify')
-const gulpBrowser = require('gulp-browser')
+// const gulpBrowser = require('gulp-browserify')
+// const browserify = require('browserify')
+// const transform = require('vinyl-transform')
 // const concat = require('gulp-concat')
+// const useref = require('gulp-useref')
 
 gulp.task('default', ['watch'])
 
@@ -16,7 +19,7 @@ gulp.task('watch', ['browserSync', 'sass'], function () {
   gulp.watch('./app/styles/scss/*.scss', ['sass'])
   gulp.watch('./index.html', browserSync.reload)
   gulp.watch('./app/html/*.html', browserSync.reload)
-  gulp.watch('./app/js/dev/**/*.js', ['js'])
+  gulp.watch('./app/js/dev/*/*.js', browserSync.reload)
 })
 
 gulp.task('sass', function () {
@@ -34,18 +37,17 @@ gulp.task('sass', function () {
     }))
 })
 
-let transforms = [
-  {
-    transform: 'babelify',
-    options: {presets: ['es2015']}
-  }
-]
+// let transforms = [
+//   {
+//     transform: 'babelify',
+//     options: {presets: ['es2015']}
+//   }
+// ]
 
 gulp.task('js', function () {
-  return gulp.src('./app/js/dev/**/*.js')
+  return gulp.src('./app/js/dev/*/*.js')
     .pipe(customPlumber('Error Running Js'))
     .pipe(sourcemaps.init())
-    .pipe(gulpBrowser.browserify(transforms))
     .pipe(uglify())
     .pipe(gulp.dest('./app/js'))
     .pipe(browserSync.reload({
