@@ -1,7 +1,8 @@
 body {
   background-color: black;
   margin: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
 }
 
 // ----- HEADER & NAVBAR ----- //
@@ -41,7 +42,7 @@ body {
 	margin-left: 5vw;
 }
 
-#jom {
+#invite {
 	margin-left: 2vw;
 }
 
@@ -66,7 +67,7 @@ body {
 
 #header-images-left {
 	display: inline-block;
-	background-image: url("/app/assets/images/spices.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("/app/assets/images/spices.jpg");
 	background-repeat: no-repeat;
     background-position: center;
 	z-index: -1;
@@ -79,7 +80,7 @@ body {
 .header-image-text-left {
 	text-align: right;
 	position: relative;
-	top: 30vh;
+	top: 35vh;
 	margin-right: 10vw;
 }
 
@@ -92,7 +93,7 @@ body {
 
 #header-images-right {
 	display: inline-block;
-	background-image: url("/app/assets/images/crab.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("/app/assets/images/crab.jpg");
 	background-repeat: no-repeat;
     background-position: center;
 	z-index: -1;
@@ -105,7 +106,7 @@ body {
 .header-image-text-right {
 	text-align: left;
 	position: relative;
-	top: 30vh;
+	top: 35vh;
 	margin-left: 10vw;
 }
 
@@ -127,7 +128,7 @@ body {
 	height: 5em;
 	width: 20em;
 	position: relative;
-	top: 20em;
+	top: 24em;
 	left: 22.5em;
 	color: white;
 }
@@ -140,10 +141,14 @@ body {
 // ----- END OF HEADER & NAVBAR ----- //
 
 // ----- HOW IT WORKS ----- //
-.how-it-works-container {
+.how-it-works-container, .category-container {
 	height: 60vh;
 	width: 100vw;
 	background: white;
+}
+
+.row {
+	border-bottom: 1px solid #DCDCDC;
 }
 
 .how-it-works-text {
@@ -154,17 +159,126 @@ body {
 
 #how-it-works {
 	font-size: 3em;
-	padding-top: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 0.25em;
 }
 
-.how-it-works-images-container {
-	display: flex;
-	justify-content: center;
-}
+// .how-it-works-images-container {
+// 	display: flex;
+// 	justify-content: center;
+// }
 
 .how-it-works-images-box {
-	width: 33.3vw;
 	text-align: center;
+	height: 30vh;
+	font-size: 4em;
+	color: rgb(250, 69, 66);
+}
+
+.how-it-works-caption {
+	font-weight: 300;
+	font-size: 0.5em;
+	color: black;
+}
+
+.how-it-works-wording {
+	color: black;
+	font-size: 0.25em;
+	font-weight: 200;
 }
 
 // ----- END OF HOW IT WORKS ----- //
+
+
+
+// ----- CATEGORY ----- //
+
+.category-text {
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 2em;
+}
+
+#category {
+	font-size: 3em;
+	padding-bottom: 0.25em;
+}
+
+// ----- END OF CATEGORY ----- //
+
+
+
+// ----- JON'S CSS-GRID ----- //
+
+* {
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+}
+
+.row {
+  /*width: 100%;*/
+  display: flex;
+  flex-wrap: wrap;
+  /*margin-bottom: 1em;*/
+  margin-right: -1em;
+  margin-left: -1em;
+}
+
+.container {
+  // width: 100%;
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.column {
+  flex: 1;
+  min-height: 1em;
+  padding: 0 0.5em;
+  padding-bottom: 1em;
+}
+
+.is-1 {
+  flex: 0 0 100%;
+}
+.is-12 {
+  flex: none;
+  width: 8.3333%;
+}
+
+.is-half {
+  flex: 0 0 50%;
+}
+
+.is-full {
+  flex: 0 0 100%;
+}
+
+.is-one-quarter {
+  flex: 0 0 25%;
+}
+
+.is-three-quarter {
+  flex: 0 0 75%;
+}
+
+.is-one-third {
+  flex: 0 0 33.33%;
+}
+
+.is-two-third {
+  flex: 0 0 66.66%;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
+.something {
+  border: 1px solid black;
+  height: 100px;
+  background-color: red;
+}
+
+// ----- END OF JON'S CSS-GRID ----- //
