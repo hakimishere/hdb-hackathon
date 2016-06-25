@@ -1,8 +1,10 @@
 body {
   background-color: black;
   margin: 0px;
+  border: 0px;
   font-family: Ubuntu, sans-serif;
   font-size: 16px;
+  width: 100vw;
 }
 
 // ----- HEADER & NAVBAR ----- //
@@ -70,7 +72,6 @@ body {
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("/app/assets/images/spices.jpg");
 	background-repeat: no-repeat;
     background-position: center;
-	z-index: -1;
 	width: 50vw;
 	height: 100vh;
 	opacity: 0.85;
@@ -96,7 +97,6 @@ body {
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("/app/assets/images/crab.jpg");
 	background-repeat: no-repeat;
     background-position: center;
-	z-index: -1;
 	width: 50vw;
 	height: 100vh;
 	opacity: 0.85;
@@ -147,7 +147,7 @@ body {
 	background: white;
 }
 
-.row {
+.how-it-works-row {
 	border-bottom: 1px solid #DCDCDC;
 }
 
@@ -162,11 +162,6 @@ body {
 	padding-top: 1em;
 	padding-bottom: 0.25em;
 }
-
-// .how-it-works-images-container {
-// 	display: flex;
-// 	justify-content: center;
-// }
 
 .how-it-works-images-box {
 	text-align: center;
@@ -205,6 +200,65 @@ body {
 }
 
 // ----- END OF CATEGORY ----- //
+
+
+
+// ----- FOOTER ----- //
+
+.footer-container {
+	height: 15vh;
+	width: 100vw;
+	background-color: rgb(242, 241, 233);
+}
+
+.footer-inner-container {
+	height: 100%;
+}
+
+.footer-row {
+	margin-top: 1em;
+}
+
+.top-bar {
+	border-top:5px solid black;
+	margin-left: 5vw;
+	padding-bottom: 1em;
+}
+
+.top-bar-1 {
+	border-top:5px solid rgb(250, 69, 66);
+	color: rgb(250, 69, 66);
+}
+
+.top-bar-2 {
+	border-top:5px solid rgb(70, 209, 96);
+	color: rgb(70, 209, 96);
+	// border-top:5px solid rgb(250, 69, 66);
+	// color: rgb(250, 69, 66);
+}
+
+.top-bar-3 {
+	border-top:5px solid rgb(13, 211, 187);
+	color: rgb(13, 211, 187);
+	// border-top:5px solid rgb(250, 69, 66);
+	// color: rgb(250, 69, 66);
+}
+
+// .video-image {
+// 	background-image: url("/app/assets/images/cooking-video.jpg");
+// 	background-repeat: no-repeat;
+//     background-position: center;
+// 	height: 10vh;
+// 	width: 20vw;
+// }
+
+.top-text {
+	margin-top: 1em;
+}
+
+// ----- END OF FOOTER ----- //
+
+
 
 
 
