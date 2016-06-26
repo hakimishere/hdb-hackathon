@@ -1,6 +1,36 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// ----- START OF BOOKING CONFIRMATION LAYOUT ----- //
+.is-one-quarter {
+  flex: 0 0 25%;
+  width: 50%;
+  margin: 0 auto;
+}
+.something {
+  border: solid 1px #ccc;
+  background: white;
+  height: 420px;
+}
+#booking-wrap {
+  text-align: center;
+  padding: 15px;
+  padding-top: 70px;
+  background-color: white;
+}
+.booking-confirm {
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: black;
+  font-size: 13px;
+}
+#thanks {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 15;
+}
+// ----- END OF BOOKING CONFIRMATION LAYOUT ----- //
+
 body {
   // background-color: black;
   margin: 0px;
@@ -28,7 +58,22 @@ a:visited {
 }
 
 .navbar-links {
-	color: #F5F5F5;
+	color: #fa4542;
+	text-decoration: none;
+	// margin-left: 5vw;
+	font-size: 1.0em;
+}
+
+.navbar-links:visited {
+	color: #fa4542;
+	text-decoration: none;
+	// margin-left: 5vw;
+	font-size: 1.0em;
+}
+
+
+.navbar-links:hover {
+	color: black;
 	text-decoration: none;
 	// margin-left: 5vw;
 	font-size: 1.0em;
@@ -71,11 +116,29 @@ a:visited {
 	margin-left: 2vw;
 }
 
+.raceimg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+.fontbtm {
+  margin-bottom: 10px;
+}
+.fonttop {
+  margin-top: 10px;
+}
 .header-images-container {
 	position: relative;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
+}
+.header-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #header-images-left {
@@ -91,9 +154,10 @@ a:visited {
 }
 
 .header-image-text-left {
+
 	// text-align: right;
-	position: relative;
-	top: 35vh;
+	// position: relative;
+	// top: 35vh;
 	// margin-right: 10vw;
 }
 
@@ -102,7 +166,7 @@ a:visited {
 	border-radius: 1em;
 	border: none;
 	opacity: 0.9;
-  margin: 0 auto;
+  // margin: 0 auto;
 }
 
 #header-images-right {
@@ -119,8 +183,8 @@ a:visited {
 .header-image-text-right {
 	// text-align: left;
 
-	position: relative;
-	top: 35vh;
+	// position: relative;
+	// top: 35vh;
 	// margin-left: 10vw;
 }
 
@@ -133,21 +197,22 @@ a:visited {
 }
 
 .header-image-text-left, .header-image-text-right {
-  margin: 0 auto;
+  // margin: 0 auto;
 	color: white;
 	font-weight: 300;
-	font-size: 5em;
+	font-size: 4em;
   line-height: 1em;
   width: 50%;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .header-button {
 	height: 5em;
 	width: 20em;
-	position: relative;
-	top: 24em;
-	left: 22.5em;
+	// position: relative;
+	// top: 24em;
+	// left: 22.5em;
 	color: white;
 }
 
@@ -167,6 +232,9 @@ a:visited {
 
 .how-it-works-row {
 	border-bottom: 1px solid #DCDCDC;
+}
+#container {
+  padding: 50px;
 }
 
 .how-it-works-text {
@@ -198,6 +266,7 @@ a:visited {
 	color: black;
 	font-size: 0.25em;
 	font-weight: 200;
+  padding-top: 10px;
 }
 
 // ----- END OF HOW IT WORKS ----- //
@@ -237,10 +306,12 @@ a:visited {
 #haha {
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .footer-row {
 	margin-top: 1em;
+
 }
 
 .top-bar {

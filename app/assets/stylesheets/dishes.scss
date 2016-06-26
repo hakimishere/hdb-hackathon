@@ -18,7 +18,13 @@ body {
   margin-right: -1em;
   margin-left: -1em;
 }
-
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.small {
+  font-size: 0.5em;
+}
 .container {
   width: 100%;
   padding: 7em;

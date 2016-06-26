@@ -1,81 +1,56 @@
 <div class="container">
-  <div class="row">
-    <div class="column is-full center-div"><img src="<%= @dish.img %>" width="100%"></div>
-  </div>
-  <div class="row">
-    <div class="column is-full center-div title">Dining with <%= @dish.users[0].name %></div>
-  </div>
-  <div class="row">
-    <div class="column is-full center-div">Review | <span class="price">$<%= @dish.price %> </span><span class="greypax">per person</span></div>
-  </div>
-  <div class="row">
-    <div class="column is-one-third center-div"></div>
-    <div class="column is-one-third center-div">
-      <select class="browser-default">
-        <option value="" disabled selected>Wednesday 7:00pm</option>
-        <option value="1">Thursday 7:00pm</option>
-        <option value="2">Friday 7:00pm</option>
-        <option value="3">Monday 7:00pm</option>
-      </select>
-      <select class="browser-default">
-        <option value="" disabled selected>1 Guest</option>
-        <option value="1">2 Guests</option>
-        <option value="2">3 Guests</option>
-        <option value="3">4 Guests</option>
-      </select>
-      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-  <i class="material-icons right">send</i>
-</button>
-    </div>
-    <div class="column is-one-third center-div"></div>
-  </div>
-  <hr class="divide"></hr>
-  <div class="row">
-    <div class="column is-full center-div menu">Menu</div>
-  </div>
-  <div class="row">
-    <div class="column is-text-side"></div>
-    <div class="column is-text center-div">
-      <p class="menu-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ultrices ipsum, dictum eleifend dolor. Suspendisse potenti. In nec enim in sapien laoreet venenatis. Ut malesuada libero quam, eget tempor nibh pellentesque nec. Nulla porta volutpat magna, id commodo massa finibus lacinia. Donec eget ultrices enim, ac tempor erat. Vivamus a convallis justo.
-      </p>
-    </div>
-    <div class="column is-text-side"></div>
-  </div>
-  <div class="row">
-    <div class="column is-text-side"></div>
-    <div class="column is-text center-div">
-      <p class="menu-text">
-  Integer augue dolor, vestibulum quis efficitur vitae, luctus et orci. Praesent et sagittis libero, vitae vulputate enim. Curabitur ut pretium lorem. Ut quam nibh, iaculis quis enim sed, ullamcorper fringilla nisi. Nunc eu leo odio. Pellentesque a dignissim turpis. Nulla et massa rhoncus, tincidunt mi et, rhoncus odio. Cras condimentum commodo enim. Fusce et mauris nunc. Mauris ultrices porttitor arcu eget dignissim. Nunc porttitor, neque nec vestibulum tincidunt, nulla elit aliquam libero, sed mattis mauris quam sit amet velit.
-      </p>
-    </div>
-    <div class="column is-text-side"></div>
-  </div>
-  <div class="row">
-    <div class="column is-text-side"></div>
-    <div class="column is-text center-div">
-      <p class="menu-text">
-  Duis ultrices nibh odio, sit amet congue ipsum accumsan ac. Quisque eleifend libero vitae felis sagittis, vel ornare ligula malesuada. Vestibulum leo purus, luctus tristique semper et, consectetur sed nibh. Integer congue risus nec massa scelerisque, eu egestas nibh gravida. Morbi mollis lorem condimentum, tincidunt eros id, fermentum tortor. Etiam imperdiet at lacus sed aliquet. Curabitur convallis blandit lectus vitae sodales. Mauris lobortis ligula in molestie iaculis. Integer faucibus condimentum ante, sit amet tincidunt turpis euismod at. Phasellus ac enim id urna rhoncus feugiat. Sed ligula tortor, aliquam id diam id, ullamcorper porta nunc. Duis vitae nunc auctor, faucibus elit eget, malesuada ipsum. Donec ac tellus maximus, pretium leo vel, egestas erat. Nulla dictum, elit sed feugiat suscipit, mauris odio sodales mauris, quis eleifend tortor eros ac velit.
-      </p>
-    </div>
-    <div class="column is-text-side"></div>
-  </div>
-  <div class="row">
-    <div class="column is-text-side"></div>
-    <div class="column is-text center-div">
-      <p class="menu-text">
-  Proin tempor in nulla vel eleifend. Suspendisse pellentesque sodales nibh. Proin nec maximus lectus, id sodales augue. Phasellus a tellus eget quam finibus tristique non id nulla. Nunc hendrerit dignissim lorem vel vehicula. Maecenas tempus non nisi quis tempus. Proin at cursus sem, ut laoreet diam.
-      </p>
-    </div>
-    <div class="column is-text-side"></div>
-  </div>
-  <div class="row">
-    <div class="column is-text-side"></div>
-    <div class="column is-text center-div">
-      <p class="menu-text">
-  Vivamus in volutpat odio. Cras quis maximus magna. Etiam a nibh vitae dolor ullamcorper bibendum ac vitae nunc. Nunc elementum mi eget orci auctor viverra. Maecenas vulputate lorem elit, sit amet feugiat lacus gravida quis. In vulputate fermentum sem id ultricies. Nam eget arcu bibendum, hendrerit lectus eget, venenatis diam. Etiam dapibus, justo sit amet condimentum elementum, risus erat bibendum nunc, eget vehicula dui nibh eget sem. Duis non arcu nisl. Integer id porta augue. Nullam eros mauris, volutpat vitae lacus at, finibus molestie nisl. Phasellus aliquet viverra ligula, a accumsan velit luctus ac. Aliquam quis volutpat leo. Vivamus vehicula metus id pellentesque egestas. Quisque eu felis aliquam, ultricies augue sit amet, feugiat lorem.
-      </p>
-    </div>
-    <div class="column is-text-side"></div>
-  </div>
-</div>
+   <div class="row">
+     <div class="column is-full center-div"><img src="<%=@dish.img%>"></div>
+   </div>
+   <div class="row">
+     <div class="column is-full center-div title">Dining with <%=@dish.users[0].name%> at <br><br><span class='small'><%=@dish.users[0].address%></span></div>
+   </div>
+   <div class="row">
+     <div class="column is-full center-div title"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1994.343928082651!2d103.85217077633514!3d1.3639540116493825!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssg!4v1466910810653" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+   </div>
+   <div class="row">
+     <div class="column is-full center-div">Review | <span class="price">$<%=@dish.price%> </span><span class="greypax">per person</span></div>
+   </div>
+   <div class="row">
+     <div class="column is-one-third center-div"></div>
+     <div class="column is-one-third center-div">
+       <select class="browser-default">
+         <option value="" disabled selected>Wednesday 7:00pm</option>
+         <option value="1">Thursday 7:00pm</option>
+         <option value="2">Friday 7:00pm</option>
+         <option value="3">Monday 7:00pm</option>
+       </select>
+       <select class="browser-default">
+         <option value="" disabled selected>1 Guest</option>
+         <option value="1">2 Guests</option>
+         <option value="2">3 Guests</option>
+         <option value="3">4 Guests</option>
+       </select>
+
+       <a class="btn fonttop waves-effect waves-light" href='/booking' type="submit" name="action">Chope</a>
+     </div>
+     <div class="column is-one-third center-div"></div>
+   </div>
+   <hr class="divide"></hr>
+   <div class="row">
+     <div class="column is-full center-div menu">Description</div>
+   </div>
+   <div class="row">
+     <div class="column is-text-side"></div>
+     <div class="column is-text center-div">
+       <p class="menu-text">
+         I am going to share my mee goreng with my neighbours, some say it is the best mee goreng in the whole of Singapore and maybe Malaysia.
+       </p>
+     </div>
+     <div class="column is-text-side"></div>
+   </div>
+   <div class="row">
+     <div class="column is-text-side"></div>
+     <div class="column is-text center-div">
+       <p class="menu-text">
+         This meal includes unlimited servings of mee goreng, eat until you explode!
+       </p>
+     </div>
+     <div class="column is-text-side"></div>
+   </div>
+ </div>

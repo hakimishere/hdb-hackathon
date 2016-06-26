@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <header class="navbar-container">
+      <div class="navbar">
+        <a class="navbar-links" id="navbar-logo" href="/"><i class="fa fa-male logo-people" aria-hidden="true"></i>
+        <i class="fa fa-building-o" id="logo-building" aria-hidden="true"></i><i class="fa fa-female logo-people" aria-hidden="true"></i>
+        <span id="brand-name">HungryGoWhichBlock</span></a>
+        <a class="navbar-links navbar-navi" href="#"><span class="navbar-link">Feed Me Leh</span></a>
+        <a class="navbar-links" id="invite" href="#"><span class="navbar-link">Invite</span></a>
+        <a class="navbar-links navbar-login" href="/users/sign_in">Login</a>
+        <a class="navbar-links" id="sit-down" href="/users/sign_up">Register</a>
+      </div>
+    </header>
+
     <%= yield %>
   </body>
 </html>

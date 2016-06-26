@@ -13,7 +13,7 @@
                         <img src="<%= dish.img %>" style="width:100%;height:100%;">
                     </div>
                     <div class="dishes-name">
-                        <span id="name"><%= dish.name %></span>
+                        <span id="name" style="font-size: 1.2em;"><%= dish.name %></span>
                     </div>
                     <hr>
                     <div class="dishes-user-info">
@@ -21,8 +21,9 @@
                         <% if dish.users[0] %>
                         <span id="username"><%= dish.users[0].name %></span>
                         <% end %>
-                        <span><i>from</i></span>
-                        <span id="precinct">Ang Mo Kio</span>
+                        <br />
+                        <span style="font-size: 0.6em;">FROM </span><br>
+                        <span id="precinct" style="font-size: 0.8em;"><strong><%=dish.users[0].address%></strong></span>
                     </div>
                     <div>
                         <a href="/dishes/<%= dish.id %>"><i class="fa fa-dot-circle-o fa-3x" aria-hidden="true"></i></a>
