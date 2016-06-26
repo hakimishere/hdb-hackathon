@@ -1,0 +1,78 @@
+<header class="navbar-container">
+  <div class="navbar">
+    <a class="navbar-links" id="navbar-logo" href="#"><i class="fa fa-male logo-people" aria-hidden="true"></i>
+    <i class="fa fa-building-o" id="logo-building" aria-hidden="true"></i><i class="fa fa-female logo-people" aria-hidden="true"></i>
+    <span id="brand-name">HungryGoWhichBlock</span></a>
+    <a class="navbar-links navbar-navi" href="#"><span class="navbar-link">Feed Me Leh</span></a>
+    <a class="navbar-links" id="invite" href="#"><span class="navbar-link">Invite</span></a>
+    <a class="navbar-links navbar-login" href="#">Wash Hands</a>
+    <a class="navbar-links" id="sit-down" href="#">Sit Down</a>
+  </div>
+  <div class="header-images-container">
+    <div class="header-images" id="header-images-left">
+      <div class="header-image-text-left">Good things must share.</div>
+      <button class="header-button" id="invite-now"><span class="button-text">Invite Now</span></button>
+    </div>
+    <div class="header-images" id="header-images-right">
+      <div class="header-image-text-right">Eat until you shiok.</div>
+      <button class="header-button" id="kiasu-now"><%= link_to 'Chope Now', dishes_path, :class => 'button-text'%></button>
+    </div>
+  </div>
+</header>
+
+<div class="how-it-works-container">
+  <main class="how-it-works-text">
+    <div id="how-it-works">How it works</div>
+    <span id="how-it-works-subtext">We're Singaporeans and we know how food brings us together like nothing else.</span>
+  </main>
+  <div class="how-it-works-images-container container">
+    <div class="how-it-works-row row">
+      <div class="how-it-works-images-box column is-one-third">
+        <i class="fa fa-building-o how-it-works-images" aria-hidden="true"></i>
+        <br >
+        <span class="how-it-works-caption">Visit Homes</span>
+        <p class="how-it-works-wording">No better reason to knock on your neighbour's doors.</p>
+      </div>
+      <div class="how-it-works-images-box column is-one-third">
+        <i class="fa fa-cutlery how-it-works-images" aria-hidden="true"></i>
+        <br >
+        <span class="how-it-works-caption">Chope Plate</span>
+        <p class="how-it-works-wording">No need to leave your tissue packets or cards.</p>
+      </div>
+      <div class="how-it-works-images-box column is-one-third">
+        <i class="fa fa-comments how-it-works-images" aria-hidden="true"></i>
+        <br >
+        <span class="how-it-works-caption">Chit Chat</span>
+        <p class="how-it-works-wording">Tantalise the tastebud, warm up your heart.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="category-container">
+  <main class="category-text">
+    <div id="category">Gastronomy in your 'hood</div>
+    <span id="category-subtext">Explore the different cultures in your neighbourhood.</span>
+    <% @cat.each do |c| %>
+    <%= c.name %>
+    <% end %>
+  </main>
+
+</div>
+
+<div class="footer-container">
+  <div id='haha' class="container footer-inner-container">
+    <div class="footer-row row">
+      <div class="column is-one-quarter top-bar top-bar-1">
+        <div class="top-text">Latest Happenings</div>
+      </div>
+      <div class="column is-one-quarter top-bar top-bar-2">
+        <div class="top-text">Recipes</div>
+      </div>
+      <div class="column is-one-quarter top-bar top-bar-3">
+        <div class="top-text">Videos</div>
+        <div class="video-image"></div>
+      </div>
+      </div>
+  </div>
+</div>

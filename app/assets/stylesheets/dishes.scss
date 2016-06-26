@@ -1,0 +1,159 @@
+// Place all the styles related to the dishes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: Ubuntu, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+}
+
+.row {
+  /*width: 100%;*/
+  display: flex;
+  flex-wrap: wrap;
+  /*margin-bottom: 1em;*/
+  margin-right: -1em;
+  margin-left: -1em;
+}
+
+.container {
+  width: 100%;
+  padding: 7em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.column {
+  flex: 1;
+  min-height: 1em;
+  padding: 0 0.5em;
+  padding-bottom: 1em;
+}
+
+.is-one-third {
+  flex: 0 0 33.33%;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
+.something {
+  border: solid 1px #ccc;
+	background: white;
+  height: 420px;
+}
+
+
+
+
+
+#oneA {
+  text-align: center;
+}
+
+.dishes-price {
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  padding: 8px;
+}
+#price {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+  font-size: 13px;
+}
+
+.dishes-name {
+  padding: 10px 0px 3px 0;
+}
+#name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.dishes-user-info {
+  text-align: center;
+  padding-right: 10px;
+  padding: 8px;
+}
+#username, #precinct, #rating {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: black;
+  font-size: 18px;
+}
+
+.dishes-rating {
+  padding-top: 8px;
+}
+
+.fa-dot-circle-o {
+  color: rgb(250, 69, 66);
+}
+.fa-dot-circle-o:hover {
+  color: black;
+}
+
+.center-div	{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 0px;
+}
+
+.price {
+  font-size: 2em;
+}
+
+.greypax {
+  color: #888888;
+}
+
+.perperson {
+  font-size: 1.0em;
+}
+
+.menu {
+  font-size: 2.2em;
+  margin-bottom: 0px;
+}
+
+.menu-text {
+  font-size: 0.8em;
+  color: #888888;
+}
+
+hr.divide {
+  border: 0;
+  height: 1px;
+  margin-bottom: 20px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.is-text-side {
+  flex: none;
+  width: 12.5%;
+}
+
+.is-text {
+  flex: none;
+  width: 75%;
+}

@@ -1,0 +1,362 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  // background-color: black;
+  margin: 0px;
+  border: 0px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  width: 100vw;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+// ----- HEADER & NAVBAR ----- //
+
+.navbar {
+	width: 100vw;
+	position: absolute;
+	z-index: 1;
+	margin-top: 1em;
+}
+
+.navbar-links {
+	color: #F5F5F5;
+	text-decoration: none;
+	// margin-left: 5vw;
+	font-size: 1.0em;
+}
+
+#navbar-logo {
+	font-size: 1.3em;
+	margin-left: 5vw;
+}
+
+.logo-people {
+	font-size: 1.5em;
+}
+
+#logo-building {
+	font-size: 1.8em;
+}
+
+#brand-name {
+	margin-left: 0.5vw;
+}
+
+.navbar-navi {
+	margin-left: 5vw;
+}
+
+#invite {
+	margin-left: 2vw;
+}
+
+.navbar-link {
+	margin-left: 0.5vw;
+}
+
+.navbar-login {
+	margin-left: 35vw;
+}
+
+#sit-down {
+	margin-left: 2vw;
+}
+
+.header-images-container {
+	position: relative;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+#header-images-left {
+	display: inline-block;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("spices.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: center;
+	width: 50vw;
+	height: 100vh;
+	opacity: 0.85;
+	position: relative;
+}
+
+.header-image-text-left {
+	// text-align: right;
+	position: relative;
+	top: 35vh;
+	// margin-right: 10vw;
+}
+
+#invite-now {
+	background-color: rgb(250, 69, 66);
+	border-radius: 1em;
+	border: none;
+	opacity: 0.9;
+  margin: 0 auto;
+}
+
+#header-images-right {
+	display: inline-block;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url("crab.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+	width: 50vw;
+	height: 100vh;
+	opacity: 0.85;
+	position: relative;
+}
+
+.header-image-text-right {
+	// text-align: left;
+
+	position: relative;
+	top: 35vh;
+	// margin-left: 10vw;
+}
+
+#kiasu-now {
+	background-color: rgb(250, 69, 66);
+	// background-color: #696969;
+	border-radius: 1em;
+	border: none;
+	opacity: 0.9;
+}
+
+.header-image-text-left, .header-image-text-right {
+  margin: 0 auto;
+	color: white;
+	font-weight: 300;
+	font-size: 5em;
+  line-height: 1em;
+  width: 50%;
+  text-align: center;
+}
+
+.header-button {
+	height: 5em;
+	width: 20em;
+	position: relative;
+	top: 24em;
+	left: 22.5em;
+	color: white;
+}
+
+.button-text {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+// ----- END OF HEADER & NAVBAR ----- //
+
+// ----- HOW IT WORKS ----- //
+.how-it-works-container, .category-container {
+	height: 60vh;
+	width: 100vw;
+	background: white;
+}
+
+.how-it-works-row {
+	border-bottom: 1px solid #DCDCDC;
+}
+
+.how-it-works-text {
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 2em;
+}
+
+#how-it-works {
+	font-size: 3em;
+	padding-top: 1em;
+	padding-bottom: 0.25em;
+}
+
+.how-it-works-images-box {
+	text-align: center;
+	height: 30vh;
+	font-size: 4em;
+	color: rgb(250, 69, 66);
+}
+
+.how-it-works-caption {
+	font-weight: 300;
+	font-size: 0.5em;
+	color: black;
+}
+
+.how-it-works-wording {
+	color: black;
+	font-size: 0.25em;
+	font-weight: 200;
+}
+
+// ----- END OF HOW IT WORKS ----- //
+
+
+
+// ----- CATEGORY ----- //
+
+.category-text {
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 2em;
+}
+
+#category {
+	font-size: 3em;
+	padding-bottom: 0.25em;
+}
+
+// ----- END OF CATEGORY ----- //
+
+
+
+// ----- FOOTER ----- //
+
+.footer-container {
+	height: 20vh;
+	width: 100vw;
+	background-color: rgb(242, 241, 233);
+}
+
+.footer-inner-container {
+  // padding: 20px 40px;
+	// height: 100%;
+}
+
+#haha {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-row {
+	margin-top: 1em;
+}
+
+.top-bar {
+	border-top:5px solid black;
+	margin-left: 5vw;
+	padding-bottom: 1em;
+}
+
+.top-bar-1 {
+	border-top:5px solid rgb(250, 69, 66);
+	color: rgb(250, 69, 66);
+}
+
+.top-bar-2 {
+	border-top:5px solid rgb(70, 209, 96);
+	color: rgb(70, 209, 96);
+	// border-top:5px solid rgb(250, 69, 66);
+	// color: rgb(250, 69, 66);
+}
+
+.top-bar-3 {
+	border-top:5px solid rgb(13, 211, 187);
+	color: rgb(13, 211, 187);
+	// border-top:5px solid rgb(250, 69, 66);
+	// color: rgb(250, 69, 66);
+}
+
+// .video-image {
+// 	background-image: url("/app/assets/images/cooking-video.jpg");
+// 	background-repeat: no-repeat;
+//     background-position: center;
+// 	height: 10vh;
+// 	width: 20vw;
+// }
+
+.top-text {
+	margin-top: 1em;
+}
+
+// ----- END OF FOOTER ----- //
+
+
+
+
+
+// ----- JON'S CSS-GRID ----- //
+
+// * {
+//   box-sizing: border-box;
+//   /*border: 1px solid black;*/
+// }
+//
+// .row {
+//   /*width: 100%;*/
+//   display: flex;
+//   flex-wrap: wrap;
+//   /*margin-bottom: 1em;*/
+//   margin-right: -1em;
+//   margin-left: -1em;
+// }
+//
+// .container {
+//   // width: 100%;
+//   padding: 1em;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+// .column {
+//   flex: 1;
+//   min-height: 1em;
+//   padding: 0 0.5em;
+//   padding-bottom: 1em;
+// }
+//
+// .is-1 {
+//   flex: 0 0 100%;
+// }
+// .is-12 {
+//   flex: none;
+//   width: 8.3333%;
+// }
+//
+// .is-half {
+//   flex: 0 0 50%;
+// }
+//
+// .is-full {
+//   flex: 0 0 100%;
+// }
+//
+// .is-one-quarter {
+//   flex: 0 0 25%;
+// }
+//
+// .is-three-quarter {
+//   flex: 0 0 75%;
+// }
+//
+// .is-one-third {
+//   flex: 0 0 33.33%;
+// }
+//
+// .is-two-third {
+//   flex: 0 0 66.66%;
+// }
+//
+// @media (max-width: 768px) {
+//   .column {
+//     flex: 0 0 100%;
+//   }
+// }
+//
+// .something {
+//   border: 1px solid black;
+//   height: 100px;
+//   background-color: red;
+// }
+
+// ----- END OF JON'S CSS-GRID ----- //

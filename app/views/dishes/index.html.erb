@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="row">
+        <!-- start -->
+      <% @dishes.each do |dish| %>
+        <div class="column is-one-third">
+            <div class="something">
+                <div id="oneA">
+                    <div class="dishes-price">
+                        <span id="price">$<%= dish.price %></span>
+                    </div>
+                    <div class="dishes-image">
+                        <img src="<%= dish.img %>" style="width:100%;height:100%;">
+                    </div>
+                    <div class="dishes-name">
+                        <span id="name"><%= dish.name %></span>
+                    </div>
+                    <hr>
+                    <div class="dishes-user-info">
+                        <span><i>by</i></span>
+                        <% if dish.users[0] %>
+                        <span id="username"><%= dish.users[0].name %></span>
+                        <% end %>
+                        <span><i>from</i></span>
+                        <span id="precinct">Ang Mo Kio</span>
+                    </div>
+                    <div>
+                        <a href="/dishes/<%= dish.id %>"><i class="fa fa-dot-circle-o fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="dishes-rating">
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                          </span>
+                        <span id="rating">(5)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <% end %>
+    </div>
+</div>
